@@ -1,0 +1,9 @@
+version: "3"
+services:
+  service:
+    build: .
+    container_name: service
+    env_file:
+      - .env
+    ports:
+      - 80:80
